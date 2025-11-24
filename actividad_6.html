@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>HTML — ejemplo</title>
+  <style>
+    :root{
+      --max-width: 800px;
+      --accent: #111;
+      --highlight: #fff176; 
+      --muted: #444;
+    }
+    body{
+      font-family: "Georgia", "Times New Roman", serif;
+      color: var(--accent);
+      line-height: 1.6;
+      margin: 40px;
+      display: flex;
+      justify-content: center;
+    }
+    .container{
+      max-width: var(--max-width);
+    }
+
+    h1{
+      font-size: 48px;
+      margin: 0 0 12px 0;
+      font-weight: 700;
+    }
+    h2{
+      font-size: 28px;
+      margin-top: 28px;
+      margin-bottom: 10px;
+    }
+    p{
+      margin: 10px 0;
+      font-size: 16px;
+      color: var(--muted);
+    }
+    .highlight{
+      background: linear-gradient(transparent 60%, var(--highlight) 60%); /* efecto tipo marcador */
+      padding: 0 2px;
+    }
+    .strike{
+      text-decoration: line-through;
+      color: #777;
+    }
+    small{
+      display:block;
+      margin-top:14px;
+      color:#333;
+    }
+    .term{
+      font-weight: 700;
+      color: #000;
+    }
+    .spacer{
+      margin-bottom: 8px;
+    }
+  </style>
+</head>
+<body>
+  <main class="container" role="main" aria-labelledby="titulo">
+    <h1 id="titulo">HTML</h1>
+
+    <p class="spacer">
+      <span class="term">HTML</span> son las siglas de <em>HyperText Markup Language</em>, que puede traducirse como lenguaje de marcas o marcado de hipertexto.
+    </p>
+
+    <p>
+      El lenguaje <span class="term">HTML</span> se emplea para crear las páginas web. Es muy fácil ver el código <span class="term">HTML</span> de una página web, 
+      <span class="strike">la opción exacta cambia de un navegador a otro</span> y también puede cambiar de una versión a otra de un mismo navegador, pero suelen tener un nombre similar.
+    </p>
+
+    <p>
+      <span class="term">HTML</span> se compone de <span class="highlight">etiquetas que se escriben entre los símbolos menor que y mayor que</span>.
+    </p>
+
+    <h2>Historia de HTML</h2>
+    <p>
+      Los inicios del lenguaje <span class="term">HTML</span> se remontan al año <strong>1990</strong>, cuando <strong>Tim Berners-Lee</strong> creó la primera página web.
+    </p>
+
+    <h2>Versiones de HTML</h2>
+    <p><em>Tim Berners-Lee definió la primera versión de <span class="term">HTML</span> en el año 1991.</em></p>
+
+    <small>En la actualidad, la última versión de <span class="term">HTML</span> es <strong>HTML5</strong>.</small>
+  </main>
+</body>
+</html>
+
+</body>
+</html>

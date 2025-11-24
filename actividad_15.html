@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Inscripción al Summer Sound Festival 2026 (Validado)</title>
+</head>
+<body>
+
+    <h1>Inscripción al Summer Sound Festival 2026</h1>
+
+    <form>
+        <p>
+            <label for="nombre">Nombre:</label><br>
+            <input type="text" id="nombre" name="nombre" maxlength="40" required>
+        </p>
+
+        <p>
+            <label for="apellidos">Apellidos:</label><br>
+            <input type="text" id="apellidos" name="apellidos" maxlength="30" required>
+        </p>
+
+        <p>
+            <label for="correo">Correo electrónico:</label><br>
+            <input type="email" id="correo" name="correo" value="tuemail@ejemplo.com" required>
+        </p>
+
+        <p>
+            <label for="contrasena">Contraseña:</label><br>
+            <input type="password" id="contrasena" name="contrasena" minlength="6" maxlength="12">
+        </p>
+
+        <p>
+            <label for="edad">Edad:</label>
+            <input type="number" id="edad" name="edad" min="16" required>
+            <small>(Debes tener al menos 16 años)</small>
+        </p>
+
+        <p>
+            <label for="entradas">Número de entradas:</label>
+            <input type="number" id="entradas" name="entradas" value="1" min="1" max="6" required>
+            <small>(Máximo 6 entradas por persona)</small>
+        </p>
+
+        <hr>
+
+        <p>
+            <label for="fecha_festival">Fecha del festival:</label>
+            <input type="date" id="fecha_festival" name="fecha_festival" min="2026-07-01" max="2026-07-31" required>
+        </p>
+
+        <p>
+            <label for="hora_llegada">Hora estimada de llegada:</label>
+            <input type="time" id="hora_llegada" name="hora_llegada" min="14:00" max="23:00" required>
+            <small>(Acceso disponible de 14:00 a 23:00)</small>
+        </p>
+
+        <p>
+            <label for="ciudad">Ciudad del evento:</label>
+            <input type="text" id="ciudad" name="ciudad" value="Barcelona" readonly>
+        </p>
+
+        <p>
+            <label for="codigo_promocional">Código promocional:</label>
+            <input type="text" id="codigo_promocional" name="codigo_promocional" value="FESTSS26">
+        </p>
+
+        <p>
+            <label for="comprobante">Comprobante de pago (PDF o imagen):</label>
+            <input type="file" id="comprobante" name="comprobante" accept=".pdf, image/*" required>
+        </p>
+
+        <p>
+            <label for="telefono">Teléfono de contacto:</label><br>
+            <input type="text" id="telefono" name="telefono" maxlength="10" >
+        </p>
+
+        <p>

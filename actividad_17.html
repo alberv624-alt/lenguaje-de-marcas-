@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Contratación de servicios de telefonía móvil</h1>
+    <form action="">
+     <fieldset>
+    <legend><b>Datos personales</b></legend>
+    <div>
+         <label for="name">Nombre completo:</label>
+         <input type="text" name="nombre" id="name" size="25">
+    </div>
+    <br>
+      <div>
+         <label for="dni">DNI/NIE::</label>
+         <input type="text" name="dni" id="dni" placeholder="Ej: 12345678A" minlength="9">
+    </div>
+    <br>
+    <div>
+         <label for="direccion">Dirección::</label>
+         <input type="text" name="dni" id="dni" placeholder="Calle,número,código postal, etc." size="30">
+    </div>
+    <br>
+     <div>
+         <label for="telefono">Teléfono de contacto:</label>
+         <input type="tel" name="tel" id="tel" placeholder="">
+    </div>
+    <br>
+    <div>
+         <label for="correo electronico">Correo electronico:</label>
+         <input type="email" name="correo" id="correoelectronico" placeholder="">
+    </div>
+    <br>
+     <div>
+         <label for="cuentabancaria">Cuenta bancaria (IBAN):</label>
+         <input type="text" name="text" id="cuentabancaria" placeholder="ES61 1234 3456 42 0456323532" size="28">
+    </div>
+    <br>
+    <div>
+         <label for="fechaderegistro">Fecha de registro:</label>
+         <input type="date" name="fecha" id="fecha" value="2025-11-15">
+    </div>
+    <br>
+</fieldset>
+<br>
+<fieldset>
+    <legend><b>Datos del servicio</b></legend>
+    <div>
+         <label for="tarifa">Tarifa contratada:</label>
+         <select name="tarifa" id="tarifa" ><option value="" selected hidden >-- Selecciona tu tarifa -- </option> 
+     <option>Básica (10GB/llamadas ilimitadas)</option>
+     <option>Intermedia (50GB/llamadas ilimitadas)</option>
+     <option>Premium (Datos ilimitadas)</option>
+     </select>
+    </div>
+    <br>
+    <div>
+     <label for="contrato">Tipo de contrato:</label>
+          <div>
+          <input type="radio" name="contrato" id="contrato" value="numero"> <label for="nuevo numero">Buevo número</label>
+          <input type="radio" name="contrato" id="portabilidad" value="portabilidad"> <label for="portabilidad">Portabilidad (mantener numero actual)</label>
+          </div>
+    </div>
+    <br>
+    <div>
+         <label for="fechadecomienzo">Fecha de comienzo:</label>
+         <input type="date" name="fecha" id="fecha" min="2025/11/16">
+    </div>
+    <br>
+    <label for="comienzo" >Observaciones y comentarios:</label>
+    <textarea placeholder="Ejemplo: Prefiero activar el servicio a partir de las 18:00h..."></textarea>
+    <br>
+    <label for="subirdocumentacion">Subir documentación por ambas caras (PDF o imagen)</label>
+    <input type="file" multiple name="subirdocumentacion" id="subirdocumentacion" >
+</fieldset>
+<br>
+<fieldset>
+     <legend><b>Confirmación</b></legend>
+     <input type="checkbox" name="condiciones" id="condiciones">
+     <label for="checkbox">He leído y acepto los terminos y condiciones del servicio</label>
+      <input type="checkbox" name="notificaciones" id="notificaciones">
+     <label for="checkbox">Deseo recibir notificaciones por SMS o correo electronico.</label>
+</fieldset>
+<div><input type="submit" value="Contratar"> <input type="reset" value="Reiniciar formulario">
+    </form>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Formulario de viaje turístico</title>
+
+  
+</head>
+
+<body>
+
+  <h1>Formulario: Viaje turístico</h1>
+
+  <form action="#" method="post">
+
+    <div class="form-row">
+      <label for="destino">Selecciona un destino:</label>
+      <select id="destino" name="destino" required>
+        <option value="" disabled selected>-- Selecciona un destino --</option>
+<br>
+        <optgroup label="Europa">
+          <option value="berlin">Berlín</option>
+          <option value="roma">Roma</option>
+          <option value="amsterdam">Ámsterdam</option>
+        </optgroup>
+<br>
+        <optgroup label="América">
+          <option value="rio">Río de Janeiro</option>
+          <option value="punta-cana">Punta Cana</option>
+          <option value="ny">Nueva York</option>
+        </optgroup>
+<br>
+        <optgroup label="Asia">
+          <option value="japon">Japón</option>
+          <option value="china">China</option>
+          <option value="tailandia">Tailandia</option>
+        </optgroup>
+      </select>
+    </div>
+<br>
+    <div class="form-row">
+      <label for="temporada">Temporada del viaje:</label>
+      <select id="temporada" name="temporada" required>
+        <option value="" disabled selected>-- Selecciona una temporada --</option>
+        <option value="primavera">Primavera</option>
+        <option value="verano">Verano</option>
+        <option value="otonio">Otoño</option>
+        <option value="invierno">Invierno</option>
+      </select>
+    </div>
+<br>
+    <div class="form-row">
+      <label for="comentarios">Comentarios o preferencias del viaje:</label>
+      <textarea id="comentarios" name="comentarios" placeholder="Ejemplo: Prefiero alojamiento cerca de la playa o excursiones culturales..."></textarea>
+    </div>
+
+    <button type="submit">Enviar</button>
+
+  </form>
+
+</body>
+</html>

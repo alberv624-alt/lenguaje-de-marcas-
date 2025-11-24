@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action=""
+    <input type="text"
+    placeholder="concepto"
+    name="concepto">
+    <input type
+
+
+    <h1>--asociar label---</h1>
+    <form action="">
+        <div>
+            <label for="titulodescriptivo">titulodescriptivo:</label>
+            <input type="text" name="titulodescriptivo" id="titulodescriptivo">
+        </div>
+    </form>
+
+    <h1>---formulario de identificación---</h1>
+    <form action="">
+        <div>
+            <label for="usuario">usuario:</label>
+            <input type="text" name="usuario" id="usuario" placeholder="usuario">
+        </div>  
+        <br>
+        <div>
+            <label for="password">contraseña</label>
+            <input type="password" name="password" id="password" placeholder="password"
+            <div>
+                <input type="submit">
+            </div>
+            <br>
+        </div>
+    </form>
+
+
+    <h1>--- atributo value en botones ---</h1>
+    <input type="submit" value="Iniciar sesión">
+
+
+
+    <h1>---Input de tipo radio: name/value---</h1>
+<form action="">
+    <input type="radio" name="grupoOpciones" value="opcion1" id="opcion 1"
+    <label for="opcion 1">opcion 1</label>
+
+     <input type="radio" name="grupoOpciones" value="opcion2" id="opcion 1"
+    <label for="opcion 2">opcion 2</label>
+
+     <input type="radio" name="grupoOpciones" value="opcion3" id="opcion 1"
+    <label for="opcion 3">opcion 3</label>
+</form>
+
+
+
+<H1>---- TIPO DE CHECKBOX---</H1>
+<FORM ACTIONS=">"
+    <label for="">interest:</label>
+    <div>
+        <input type="chekbox" name="cb-cars" id="cars">
+        <label for="cars">cars</label>
+
+        <input type="checkbox" name="cb-sport" id="sports">
+        <label for="sports">sports</label>
+
+        <input type="checkbox name=cb-videogames" id="videosgames">
+        <label for="videogames">videogames</label>
+    </div>
+
+
+    <h1>----atributo value----</h1>
+    <form actions="">
+        <div>
+            <label for="nombre">nombre</label>
+            <input type="text" name="nombre" id="nombre">
+        </div>
+        <br>
+        <div>
+         <input type="submit">
+        </div>
+    </form>
+
+
+        <h1>----atributo size----</h1>
+    <form actions="">
+        <div>
+            <label for="nombre">nombre</label>
+            <input type="text" name="nombre" id="nombre">
+        </div>
+        <br>
+        <div>
+            <div>
+            <label for="apellidos">apellidos:</label>
+            <input type="text" name="apellidos" id="apellidos" size="30">
+            <!--size es para cambiar la longitud del cuadrado de respuesta-->
+
+        </div>
+        <br>
+         <input type="submit">
+        </div>
+        
+        <h1>----atributo disabled----</h1>
+    <form actions="">
+        <div>
+            <label for="codigo postal">codigo postal:</label>
+            <input type="text" name="codigo postal" id="codigo postal">
+        </div>
+        <br>
+        <div>
+            <div>
+            <label for="ciudad">ciudad:</label>
+            <input type="text" name="ciudad" id= "ciudad" disabled value="madrid" >
+        </div>
+        <br>
+         <input type="submit">
+        </div>
+    </form>
+
+          <h1>----atributo readonly----</h1>
+    <form actions="">
+        <div>
+            <label for="codigo postal">codigo postal:</label>
+            <input type="text" name="codigo postal" id="codigo postal">
+        </div>
+        <br>
+        <div>
+            <div>
+            <label for="ciudad">ciudad:</label>
+            <input type="text" name="ciudad" id= "ciudad" readonly value="madrid" >
+        </div>
+        <br>
+         <input type="submit">
+        </div>
+    </form>
+
+
+
+    <h1>---input file:atributo multiple ---</h1>
+    <form action="">
+        <div>
+            <label for="archivo">selecciona un archivo:</label>
+            <input type="file" name="archivo" id="archivo">
+        </div>
+        <div>
+            <label for="archivos">selecciona varios archivos:</label>
+            <input type="file" name="archivos" id= "archivos" readonly value="madrid" >
+        </div>
+    </form>
+
+
+
+             <h1>----atributo required/minlenght/maxlength/min/max---</h1>
+    <form actions="">
+        <div>
+            <label for="codigo postal">codigo postal:</label>
+            <input type="text" name="codigo postal" id="codigo postal" midlenght="5" maxlength="10" required>
+        </div>
+        <br>
+        <div>
+            <div>
+            <label for="ciudad">ciudad:</label>
+            <input type="text" name="ciudad" id= "ciudad" maxlength="10" >
+        </div>
+        <br>
+        <div>
+              <label for="edad">edad:</label>
+            <input type="number" name="edad" id= "edad" min="2" max="10" >
+        </div>
+        <br>
+         <input type="submit">
+        </div>
+    </form>
+
+
+    <H1>ELEMENTO TEXTAREA</H1>
+    <FORM ACTION="">
+<DIV>
+    <LABEL FOR="COMENTARIO"> ESCRIBE TU COMENTARIO AQUI</LABEL>
+    <textarea  NAME="COMENTARIO"
+    ID="COMENTARIO" COLS="30" ROWS="3"></textarea>
+</DIV>
+<BR>
+    <DIV>
+        <INPUT TYPE="SUBMIT">
+    </DIV>
+    </FORM>
+
+
+        <H1>ELEMENTO TEXTAREA: ATRIBUTOS</H1>
+    <FORM ACTION="">
+<DIV>
+    <LABEL FOR="COMENTARIO"> ESCRIBE TU COMENTARIO AQUI</LABEL>
+    <textarea  NAME="COMENTARIO"
+    ID="COMENTARIO" COLS="30" ROWS="3" REQUIRED DISABLED placeholder="TU COMENTARIO TIENE QUE TENER ENTRE 10 Y 255 CARACTERES" minlength="10" maxlength="255" readonly></textarea>
+</DIV>
+<BR>
+    <DIV>
+        <INPUT TYPE="SUBMIT">
+    </DIV>
+    </FORM>
+
+    <h1>---elemento select---</h1>
+    <form action=""></form>
+    <div>
+        <label for="deporte">escoge un deporte </label>
+        <select name="deporte">escoge un deporte:</select>
+        <option value="baloncesto">baloncesto</option>
+        <option value="esqui">esqui</option>
+        <option value="golf">golf</option>
+        <option value="tenis">tenis</option>>
+         
+       </select>
+    </div>
+
+
+      <h1>---elemento selectect: atributo selected/disabled---</h1>
+    <form action=""></form>
+    <div>
+        <select name="deporte" id="deporte"></select>
+        <label for="deporte">escoge un deporte:</label>
+        <option value="futbol">futbol</option>
+        <option value="baloncesto">baloncesto</option>
+        <option value="esqui" disabled></option>
+        <option value="golf">golf</option>
+        <option value="tenis" disabled>tenis</option>>
+       </select>
+    </div>
+
+
+<h2>---elemento optgroup---</h2>
+<form action="">
+   <select name="coche" id="coche">
+     <label for="">stock concesionario</label>
+    <select name="" id=""></select>
+    <optgroup label="disponible">
+        <option value="kia">kia</option>
+        <option value="seat">seat</option>
+    </optgroup>
+    <optgroup label="sin stock">
+        <option value="ferrari">ferrari</option>
+        <option value="volvo">volvo</option>
+    </optgroup>
+   </select>
+</form>
+
+<h1>---elemento fieldset---</h1>
+<form action="">
+    <fieldset>
+        <legend><b>Direcion de envío</b></legend>
+        <div>
+            <label for="nombre">nombre completo</label>
+            <input type="text" name="nombre" id="nombre">
+            </div>
+            <br>
+        <div>
+            <label for="direccion">dirección:</label>
+            <input type="text" name="nombre" id="nombre">
+
+            </div>
+    </fieldset>
+    <fieldset>
+        <legend><b>Direcion de facturación</b></legend>
+         <div>
+            <label for="nombrefacturacion">nombre completo</label>
+            <input type="text" name="nombrefacturacion" id="nombrefacturacion">
+            </div>
+            <br>
+        <div>
+            <label for="direccionfacturacion">dirección:</label>
+            <input type="text" name="direccionfacturacion" id="direccionfacturacion">
+            </div>
+    </fieldset>
+<br>
+<div>
+    <input type="submit">
+</div>
+</form>
+
+
+
+
+
+
+
+</body>
+</html>

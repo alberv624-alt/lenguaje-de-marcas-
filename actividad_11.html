@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Actividad 11 — Formulario de identificación</title>
+
+</head>
+<body>
+  <div class="card">
+    <h1>Actividad 11 – Formulario de identificación</h1>
+    <p class="lead">Rellena usuario y contraseña. Los campos tienen los atributos <code>name</code> y <code>placeholder</code>.</p>
+
+    <form id="loginForm" action="#" method="post" novalidate>
+      <input type="text" name="usuario" id="usuario" placeholder="Usuario" required>
+      <input type="password" name="contrasena" id="contrasena" placeholder="Password" required>
+
+      <div class="controls">
+        <button type="button" id="verificar">Verificar</button>
+        <button type="submit">Enviar</button>
+      </div>
+    </form>
+
+    <div class="msg" id="msg"></div>
+  </div>
+
+  <script>
+    const usuario = document.getElementById('usuario');
+    const contrasena = document.getElementById('contrasena');
+    const msg = document.getElementById('msg');
+    const verificar = document.getElementById('verificar');
+
+    verificar.addEventListener('click', () => {
+      msg.style.display = 'none';
+      const u = usuario.value.trim();
+      const p = contrasena.value;
+      if (!u || !p) {
+        msg.textContent = 'Por favor completa ambos campos para verificar.';
+        msg.style.display = 'block';
+        return;
+      }
+      // Ejemplo de verificación simple (no para producción)
+      if (u.length >= 3 && p.length >= 6) {
+        msg.style.color = '#0a7';
+        msg.textContent = 'Verificación OK — listo para enviar.';
+      } else {
+        msg.style.color = '#a33';
+        msg.textContent = 'Usuario o contraseña demasiado cortos (usuario >=3, contraseña >=6).';
+      }
+      msg.style.display = 'block';
+    });
+
+    // Manejo del envío para demostrar captura (evita recargar la página)
+    document.getElementById('loginForm').addEventListener('submit', function(e){
+      e.preventDefault();
+      msg.style.display = 'none';
+      const u = usuario.value.trim();
+      const p = contrasena.value;
+      if (!u || !p) {
+        msg.style.color = '#a33';
+        msg.textContent = 'No se puede enviar: completa los campos.';
+        msg.style.display = 'block';
+        return;
+      }
+      msg.style.color = '#0a7';
+      msg.textContent = `Enviando formulario... (usuario: ${u}, contraseña: ${'*'.repeat(p.length)})`;
+      msg.style.display = 'block';
+      // Aquí normalmente enviarías los datos al servidor.
+    });
+  </script>
+</body>
+</html>
